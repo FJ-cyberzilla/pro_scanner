@@ -1,0 +1,5 @@
+httpx==0.28.1
+pyyaml==6.0.2
+iosqlite==0.21
+iosqlite==0.21.0
+rich==13.7.1
