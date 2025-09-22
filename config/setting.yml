@@ -1,0 +1,20 @@
+# Global application settings
+
+# Logging configuration
+logging:
+  level: INFO
+  format: "[%(asctime)s] - [%(levelname)s] - %(message)s"
+
+# Caching and database settings
+database:
+  enabled: True
+  filename: "pro_scanner.db"
+  cache_ttl_hours: 24  # Time to live for cached results
+
+# Network and anti-detection settings
+network:
+  timeout_seconds: 30
+  retry_attempts: 3
+  rate_limit:
+    enabled: True
+    requests_per_minute: 60  # Global rate limit
