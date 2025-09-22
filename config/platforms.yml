@@ -1,0 +1,60 @@
+# Configuration for all social media and online platforms to be scanned.
+# This file is used by the application to determine which sites to check and how to do so.
+
+platforms:
+  instagram:
+    name: "Instagram"
+    type: "api"
+    api_url: "https://www.instagram.com/api/v1/users/web_profile_info/?username={}"
+    headers:
+      x-ig-app-id: "936619743392459"
+    enabled: true
+
+  twitter:
+    name: "Twitter/X"
+    type: "web"
+    url: "https://twitter.com/{}"
+    enabled: true
+  
+  bsky:
+    name: "Bluesky"
+    type: "api"
+    api_url: "https://public.api.bsky.app/xrpc/com.atproto.identity.resolveHandle?handle={}"
+    enabled: true
+
+  reddit:
+    name: "Reddit"
+    type: "web"
+    url: "https://www.reddit.com/user/{}"
+    enabled: true
+    
+  twitch:
+    name: "Twitch"
+    type: "web"
+    url: "https://twitch.tv/{}"
+    enabled: true
+
+  telegram:
+    name: "Telegram"
+    type: "web"
+    url: "https://t.me/{}"
+    enabled: true
+  
+  pinterest:
+    name: "Pinterest"
+    type: "web"
+    url: "https://www.pinterest.com/{}"
+    enabled: true
+  
+  github:
+    name: "GitHub"
+    type: "web"
+    url: "https://github.com/{}"
+    enabled: true
+    
+  discord:
+    name: "Discord"
+    type: "unavailable"
+    description: "Discord requires API authentication and is not publicly scannable by username."
+    enabled: true
+
